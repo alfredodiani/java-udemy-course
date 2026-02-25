@@ -1,4 +1,4 @@
-package Sessao10_Arrays_Listas_Memoria.a38_data_hota_conversoes;
+package Sessao11_Data_hora.a38_data_hora_conversoes;
 
 import java.time.Instant;
 import java.time.LocalDate;
@@ -18,9 +18,23 @@ public class Program {
         //convertendo um instant para uma data local no fuso do systema operacional
         LocalDate r1 = LocalDate.ofInstant(d06,ZoneId.systemDefault());
         LocalDate r2 = LocalDate.ofInstant(d06,ZoneId.of("Portugal"));
-        LocalDateTime r3 = LocalDateTime
+        LocalDateTime r3 = LocalDateTime.ofInstant(d06, ZoneId.systemDefault());
+        LocalDateTime r4 = LocalDateTime.ofInstant(d06, ZoneId.of("Portugal"));
 
         System.out.println("r1 = " +  r1);
         System.out.println("r2 = " +  r2);
+        System.out.println("r3 = " +  r3);
+        System.out.println("r4 = " +  r4);
+
+        //obter dados de uma data-hora local - dia, mes, ano, etc
+        //localdate
+        System.out.println("d04 dia = " + d04.getDayOfMonth());
+        System.out.println("d04 dia = " + d04.getMonthValue());
+        System.out.println("d04 dia = " + d04.getYear());
+
+        //localdatetime
+        System.out.println("d05 hora = " + d05.getHour());
+        System.out.println("d05 minutos = " + d05.getMinute());
+
     }
 }

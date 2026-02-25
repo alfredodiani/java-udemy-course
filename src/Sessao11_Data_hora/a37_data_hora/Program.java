@@ -1,11 +1,10 @@
-package Sessao10_Arrays_Listas_Memoria.a37_data_hora;
+package Sessao11_Data_hora.a37_data_hora;
 
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 
 public class Program {
     public static void main(String[] args) {
